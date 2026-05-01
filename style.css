@@ -1,0 +1,58 @@
+body {
+    transition: 0.3s;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: black;
+    color: white;
+}
+
+/* Title */
+.title {
+    font-weight: bold;
+    color: #6c63ff;
+}
+
+/* Topics container */
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Topic Cards (UPDATED DESIGN) */
+.topic {
+    width: 220px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-radius: 20px;
+    color: white;
+
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Different colors for each box */
+.topic:nth-child(1) { background: linear-gradient(135deg, #667eea, #764ba2); }
+.topic:nth-child(2) { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.topic:nth-child(3) { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.topic:nth-child(4) { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.topic:nth-child(5) { background: linear-gradient(135deg, #fa709a, #fee140); }
+.topic:nth-child(6) { background: linear-gradient(135deg, #30cfd0, #330867); }
+.topic:nth-child(7) { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+.topic:nth-child(8) { background: linear-gradient(135deg, #ff9a9e, #fecfef); }
+
+/* Hover Effect */
+.topic:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
